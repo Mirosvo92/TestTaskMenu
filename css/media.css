@@ -1,0 +1,118 @@
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	/* all references (.main-nav ul li a) */
+	body .main-nav ul li a{
+		font-size: 14px;
+	}	
+	/* for hidden menu */
+	body .hidd-menu-bike ul li .submenu-child-bike{
+		display: flex;
+		flex-direction: column;
+	}
+	body .hidd-menu-bike ul li .submenu-teenager a{
+		display: flex;
+		flex-direction: column;
+	}
+	body  .hidd-menu-bike ul li .submenu-teenager{
+		display: flex;
+		flex-direction: column;
+	}
+	body .hidd-menu-bike ul li .submenu-teenager a:after{
+		content: " ";
+		background-image: none;
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+/* wr-menu */
+	body .wr-menu {
+		width: 90%;
+    	margin: 0 auto;
+		border: 1px solid #718de8;
+		box-sizing: border-box;
+	}
+/* main-nav ul */
+	body .main-nav ul{
+		display: flex;
+		flex-direction: column;
+		text-align: left
+	}
+/* main-nav li */
+	body .main-nav ul li{
+		margin-left: 15px;
+		border-bottom: 1px solid #ccc;
+		width: 90%;
+	}
+	body .main-nav ul li:last-child {
+			border-bottom: 0px;
+	}
+	body .main-nav ul li a{
+		color: #333;
+		font-family: Roboto;
+		font-size: 18px;
+		font-weight: 500;
+		padding: 0px;
+	}
+	body .main-nav ul li:hover {
+		background-color: transparent
+	}
+/* submenu-teenager(hidd-menu-scooters) */
+	body .hidd-menu-scooters{
+		display: none;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		border: 0px;
+	}
+	body .hidd-menu-scooters ul li a{
+		font-size: 14px;
+		padding-left: 24px;
+	}
+	body .hidd-menu-scooters:before{
+		left: 8%;
+	}
+/* FOR MOBILE */
+	body .mob-hid-menu{
+			display: block;
+	}
+	body .main-head{
+		background-color: #ffffff;
+	}
+	body .hidd-menu-bike ul li .line {
+		margin-left: 24px;
+	}
+/* submit menu for mobile  >=768*/
+	body .main-nav{
+		display: none
+	}
+/* hidd-menu-bike */
+	body .hidd-menu-bike{
+		display: none;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		border: none;
+	}
+	body .hidd-menu-bike ul li{
+		border: none
+	}
+	body .hidd-menu-bike ul li a{
+		font-size: 14px;
+		padding-left: 24px;
+	}
+	body .hidd-menu-bike ul li .submenu-child-bike{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		max-width: 70%;
+		padding-left: 33px;
+	}
+	body  .hidd-menu-bike ul li .submenu-teenager{
+		display: flex;
+		flex-wrap: wrap;
+		padding-left: 33px;
+	}
+	body .but-sli-menu{
+		display: block;
+	}
+}

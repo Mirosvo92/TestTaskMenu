@@ -1,0 +1,265 @@
+@import url(reset.css)
+body
+	position: relative
+	//overflow-x: hidden
+/*------HEADER-------- */
+.main-head
+	position: relative
+	min-height: 56px
+	background-color: #5879e4
+
+/*wrapper menu*/
+.wr-menu
+	max-width: 1170px
+	width: 100%
+	margin: 0px auto
+	position: relative
+
+/*main nav*/
+.main-nav
+	display: flex
+	ul
+		display: flex
+		justify-content: space-around
+		width: 100%
+		margin: auto
+		min-height: 56px
+		text-align: center
+		li
+			margin: auto
+			min-height: 56px
+			width: 100%
+			line-height: 50px
+			&:hover 
+				background-color: #718de8
+				transition: all 0.3s ease
+			a
+				color: white
+				font-family: Roboto
+				font-size: 18px
+				font-weight: 500
+				text-transform: uppercase
+				text-decoration: none
+				padding: 16px
+
+/*hidd-menu-bike*/
+.hidd-menu-bike
+	position: absolute
+	z-index: 99
+	max-width: 1170px
+	width: 100%
+	background-color: #e1e1e1
+	top: 56px
+	left: -2px
+	display: none
+	border: 1px solid #718de8
+	border-top: none
+	border-radius: 1px
+	&:before
+		content: ""
+		position: absolute
+		background-image: url('../img/arrow.png')
+		background-repeat: no-repeat
+		width: 20px
+		height: 10px
+		z-index: 99
+		top: -10px
+		left: 7%
+	ul
+		display: flex
+		justify-content: space-around
+		text-align: left
+		li
+			min-height: 56px
+			width: 100%
+			line-height: 50px
+			margin: 4px
+			padding-bottom: 17px
+			&:hover 
+				background-color: transparent
+			a
+				color: #333
+				font-family: Roboto
+				font-size: 14px
+				font-weight: 400
+				line-height: 33px
+				text-transform: none
+				padding-left: 15px
+				white-space: nowrap
+				&:hover
+					text-decoration: underline
+			.line
+				width: 90%
+				height: 1px
+				background-color: #aaa
+				margin-left: 15px
+				margin-top: -13px
+			.submenu-child-bike
+				text-align: left
+				padding-left: 15px
+				a
+					color: #555
+					font-family: Roboto
+					font-size: 12px
+					font-weight: 400
+					line-height: 24px
+					padding: 0px
+					padding-right: 20px
+					position: relative
+					width: 55px
+					display: inline-table
+					float: left
+					white-space: nowrap
+					&:last-child:after
+						content: " "
+						background: none
+					&:after
+						content: " "
+						background-image: url('../img/dot.png')
+						background-repeat: no-repeat
+						width: 4px
+						height: 4px
+						padding-top: 2px
+						position: absolute
+						top: 10px
+						right: 10px
+			.submenu-teenager
+				text-align: left
+				padding-left: 15px
+				a 
+					color: #555
+					font-family: Roboto
+					font-size: 12px
+					font-weight: 400
+					line-height: 24px
+					padding: 0px
+					padding-right: 20px
+					position: relative
+					width: 55px
+					display: inline-table
+					float: left
+					white-space: nowrap
+					&:last-child:after
+						content: " "
+						background: none
+					&:after
+						content: " "
+						background-image: url('../img/dot.png')
+						background-repeat: no-repeat
+						width: 4px
+						height: 4px
+						padding-top: 2px
+						position: absolute
+						top: 10px
+						right: 10px
+
+/*hidd-menu-scooters*/
+.hidd-menu-scooters
+	position: absolute
+	z-index: 99
+	max-width: 1170px
+	width: 100%
+	background-color: #e1e1e1
+	top: 56px
+	left: -2px
+	display: none
+	border: 1px solid #718de8
+	border-top: none
+	border-radius: 1px
+	&:before
+		content: ""
+		position: absolute
+		background-image: url('../img/arrow.png')
+		background-repeat: no-repeat
+		width: 20px
+		height: 10px
+		z-index: 99
+		top: -10px
+		left: 41%
+	ul
+		display: flex
+		justify-content: space-around
+		li
+			min-height: 56px
+			width: 100%
+			line-height: 50px
+			margin: 4px
+			padding-bottom: 17px
+			&:hover 
+				background-color: transparent
+			a
+				color: #333
+				font-family: Roboto
+				font-size: 14px
+				font-weight: 400
+				line-height: 33px
+				text-transform: none
+				padding-left: 15px
+				white-space: nowrap
+				&:hover
+					text-decoration: underline
+
+/*hidden menu for mobole*/
+.mob-hid-menu
+	text-align: center
+	width: 90%
+	margin: 0 auto
+	display: none
+	position: relative
+	background-color: #5879e4
+	.wr-butt
+		width: 80%
+		margin: 0 auto
+		display: flex
+		justify-content: center
+		cursor: pointer
+		h2
+			text-transform: uppercase
+			color: #fefefe
+			font-family: Roboto
+			font-size: 18px
+			font-weight: 500
+			min-height: 55px
+			line-height: 50px
+			padding-left: 10px
+
+/*button slider menu and button toggle*/		
+.but-sli-menu
+	width: 27px
+	height: 18px
+	background-image: url('../img/but_slide.png')
+	background-repeat: no-repeat
+	float: right
+	margin-top: 20px
+	margin-right: 15px
+	cursor: position
+	display: none
+	outline: none
+
+/* toggle */
+.toggle-mnu 
+	display: block
+	width: 28px
+	height: 28px
+	margin-top: 16px
+
+.toggle-mnu span:after,
+.toggle-mnu span:before 
+	content: ""
+	position: absolute
+	left: 0
+	top: 9px
+
+.toggle-mnu span:after
+	top: 18px
+.toggle-mnu span 
+	position: relative
+	display: block
+
+.toggle-mnu span,
+.toggle-mnu span:after,
+.toggle-mnu span:before
+	width: 100%
+	height: 2px
+	background-color: #fff
+
